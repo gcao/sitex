@@ -1,5 +1,5 @@
-express = require("express")
-mongoose = require("mongoose")
+express  = require "express"
+mongoose = require "mongoose"
 
 app = module.exports = express.createServer()
 app.configure ->
@@ -23,7 +23,7 @@ app.configure "production", ->
   mongoose.connect 'mongodb://localhost/coffeepress-prod'
   app.use express.errorHandler()
 
-Routes = require("./config/routes")
+Routes = require "./config/routes"
 Routes.populate(app)
 
 app.listen 3000

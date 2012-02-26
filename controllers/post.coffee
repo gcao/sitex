@@ -1,4 +1,4 @@
-Post = require '../models/Post'
+Post = require '../models/post'
 
 module.exports =
   index: (req, res) ->

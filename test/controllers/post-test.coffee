@@ -1,5 +1,6 @@
-PostController = require "../../controllers/post"
 require "should"
+
+PostController = require "../../controllers/post"
 
 describe "PostController", ->
   req = {}

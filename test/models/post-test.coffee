@@ -1,4 +1,5 @@
 require "should"
+
 mongoose = require 'mongoose'
 Post     = require '../../models/post'
 
